@@ -1,0 +1,33 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:z3c="http://namespaces.zope.org/z3c"    
+    i18n_domain="wechat.policy">
+
+  <browser:page
+    for="*"
+    name="tinymce-jsonconfiguration"
+    class=".tinymce.TinyMCEBrowserView"
+    permission="zope2.View"
+    attribute="jsonConfiguration"
+    layer=".interfaces.IThemeSpecific"
+    />
+    
+   <z3c:widgetTemplate
+        mode="input"
+ 		widget="collective.z3cform.datetimewidget.interfaces.IDateWidget"        
+ 		layer=".interfaces.IThemeSpecific"
+ 		template="templates/date_input.pt" />
+   <z3c:widgetTemplate
+        mode="input"
+ 		widget="collective.z3cform.datetimewidget.interfaces.IDatetimeWidget"        
+ 		layer=".interfaces.IThemeSpecific"
+ 		template="templates/datetime_input.pt" /> 		
+<!-- 		
+<include package="z3c.jbot" file="meta.zcml" />
+
+<browser:jbot
+    directory="overrides"
+    layer=".interfaces.IThemeSpecific" />
+-->    
+</configure>

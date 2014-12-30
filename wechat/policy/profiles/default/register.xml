@@ -1,0 +1,5 @@
+<registry>
+   <record field="rules" interface="plone.app.theming.interfaces.IThemeSettings" name="plone.app.theming.interfaces.IThemeSettings.rules">
+    <value>/++theme++diazotheme.bootstrap/owasp.xml</value>
+  </record> 
+</registry>

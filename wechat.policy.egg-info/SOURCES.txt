@@ -1,0 +1,15 @@
+README.txt
+setup.cfg
+setup.py
+wechat/__init__.py
+wechat.policy.egg-info/PKG-INFO
+wechat.policy.egg-info/SOURCES.txt
+wechat.policy.egg-info/dependency_links.txt
+wechat.policy.egg-info/entry_points.txt
+wechat.policy.egg-info/namespace_packages.txt
+wechat.policy.egg-info/not-zip-safe
+wechat.policy.egg-info/paster_plugins.txt
+wechat.policy.egg-info/requires.txt
+wechat.policy.egg-info/top_level.txt
+wechat/policy/__init__.py
+wechat/policy/tests.py

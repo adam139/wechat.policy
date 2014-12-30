@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<object name="portal_actions" meta_type="Plone Actions Tool"
+   xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+ <action-provider name="portal_workflow"/>
+ <action-provider name="portal_types"/>
+ <action-provider name="portal_actions"/>
+ 
+ <object name="portal_tabs" meta_type="CMF Action Category">
+  <property name="title"></property>
+  <object name="memberfolder" meta_type="CMF Action" i18n:domain="wechat.policy">
+   <property name="title" i18n:translate="">MemberFolder</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">string:${globals_view/navigationRootUrl}/memberfolder</property>
+   <property name="link_target"></property>
+   <property name="icon_expr"></property>
+   <property name="available_expr"></property>
+   <property name="permissions">
+    <element value="View"/>
+   </property>
+   <property name="visible">False</property>
+  </object>
+
+ <object name="user" meta_type="CMF Action Category">
+  <property name="title"></property>
+  <object name="dashboard" meta_type="CMF Action" i18n:domain="plone">
+   <property name="title" i18n:translate="">Dashboard</property>
+   <property name="description" i18n:translate=""></property>
+   <property name="url_expr">string:${portal_url}/dashboard</property>
+   <property name="link_target"></property>
+   <property name="icon_expr"></property>
+   <property name="available_expr">python:member is not None</property>
+   <property name="permissions">
+    <element value="Portlets: Manage own portlets"/>
+   </property>
+   <property name="visible">False</property>
+  </object>
+  <object name="properties" meta_type="CMF Action" i18n:domain="wechat.policy">
+   <property name="title" i18n:translate="">member properties</property>
+   <property name="description" i18n:translate=""></property>
+   <property name="url_expr">python:object.restrictedTraverse('@@member_url')</property>
+   <property name="link_target"></property>
+   <property name="icon_expr"></property>
+   <property name="available_expr">python:member is not None</property>
+   <property name="permissions">
+    <element value="View"/>
+   </property>
+   <property name="visible">True</property>
+  </object>  
+  <object name="preferences" meta_type="CMF Action" i18n:domain="plone">
+   <property name="title" i18n:translate="">Preferences</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">python:member.absolute_url() + '/@@personal-info'</property>
+   <property name="link_target"></property>
+   <property name="icon_expr"></property>
+   <property name="available_expr">python:member is not None</property>
+   <property name="permissions">
+    <element value="View"/>
+   </property>
+   <property name="visible">False</property>
+  </object>
+  <object name="membermanage" meta_type="CMF Action" i18n:domain="wechat.policy">
+   <property name="title" i18n:translate="">member manage</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">string:${globals_view/navigationRootUrl}/memberfolder/@@admin_view</property>
+   <property name="link_target"></property>
+   <property name="icon_expr"></property>
+   <property name="available_expr"/>
+   <property name="permissions">
+    <element value="Plone Site Setup: Overview"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+    
+  <object name="followed" meta_type="CMF Action" i18n:domain="wechat.policy">
+   <property name="title" i18n:translate="">my followed</property>
+   <property name="description" i18n:translate=""></property>
+   <property name="url_expr">string:${globals_view/navigationRootUrl}/@@followed</property>
+   <property name="link_target"></property>
+   <property name="icon_expr"></property>
+   <property name="available_expr">python:member is not None</property>
+   <property name="permissions">
+    <element value="View"/>
+   </property>
+   <property name="visible">True</property>
+  </object>    
+
+  <object name="login" meta_type="CMF Action" i18n:domain="plone">
+   <property name="title" i18n:translate="">Log in</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">string:${globals_view/navigationRootUrl}/login</property>
+   <property name="link_target"></property>
+   <property name="icon_expr"></property>
+   <property name="available_expr">python:member is None</property>
+   <property name="permissions">
+    <element value="View"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+  <object name="join" meta_type="CMF Action" i18n:domain="plone">
+   <property name="title" i18n:translate="">Register</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">string:${globals_view/navigationRootUrl}/memberfolder/@@register</property>
+   <property name="link_target"></property>
+   <property name="icon_expr"></property>
+   <property name="available_expr">python:member is None</property>
+   <property name="permissions">
+    <element value="Add portal member"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+ </object>
+</object>

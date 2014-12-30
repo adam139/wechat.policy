@@ -1,0 +1,10 @@
+<layers>
+    
+    <!-- Enable the  Theme layer when installed -->
+    
+    <layer
+        name="wechat.policy"
+        interface="wechat.policy.browser.interfaces.IThemeSpecific"
+        />
+
+</layers>

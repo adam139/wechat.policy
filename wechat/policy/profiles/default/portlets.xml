@@ -1,0 +1,445 @@
+<?xml version="1.0"?>
+<portlets>
+ <portletmanager name="ContentWellPortlets.AbovePortletManager1"
+    type="Products.ContentWellPortlets.browser.interfaces.IPortletsAboveContent"/>
+ <portletmanager name="ContentWellPortlets.AbovePortletManager2"
+    type="Products.ContentWellPortlets.browser.interfaces.IPortletsAboveContent"/>
+ <portletmanager name="ContentWellPortlets.AbovePortletManager3"
+    type="Products.ContentWellPortlets.browser.interfaces.IPortletsAboveContent"/>
+ <portletmanager name="ContentWellPortlets.AbovePortletManager4"
+    type="Products.ContentWellPortlets.browser.interfaces.IPortletsAboveContent"/>
+ <portletmanager name="ContentWellPortlets.AbovePortletManager5"
+    type="Products.ContentWellPortlets.browser.interfaces.IPortletsAboveContent"/>
+ <portletmanager name="ContentWellPortlets.AbovePortletManager6"
+    type="Products.ContentWellPortlets.browser.interfaces.IPortletsAboveContent"/>
+ <portletmanager name="ContentWellPortlets.BelowPortletManager1"
+    type="Products.ContentWellPortlets.browser.interfaces.IPortletsBelowContent"/>
+ <portletmanager name="ContentWellPortlets.BelowPortletManager2"
+    type="Products.ContentWellPortlets.browser.interfaces.IPortletsBelowContent"/>
+ <portletmanager name="ContentWellPortlets.BelowPortletManager3"
+    type="Products.ContentWellPortlets.browser.interfaces.IPortletsBelowContent"/>
+ <portletmanager name="ContentWellPortlets.BelowPortletManager4"
+    type="Products.ContentWellPortlets.browser.interfaces.IPortletsBelowContent"/>
+ <portletmanager name="ContentWellPortlets.BelowPortletManager5"
+    type="Products.ContentWellPortlets.browser.interfaces.IPortletsBelowContent"/>
+ <portletmanager name="ContentWellPortlets.BelowPortletManager6"
+    type="Products.ContentWellPortlets.browser.interfaces.IPortletsBelowContent"/>
+ <portletmanager name="ContentWellPortlets.FooterPortletManager1"
+    type="Products.ContentWellPortlets.browser.interfaces.IFooterPortlets"/>
+ <portletmanager name="ContentWellPortlets.FooterPortletManager2"
+    type="Products.ContentWellPortlets.browser.interfaces.IFooterPortlets"/>
+ <portletmanager name="ContentWellPortlets.FooterPortletManager3"
+    type="Products.ContentWellPortlets.browser.interfaces.IFooterPortlets"/>
+ <portletmanager name="ContentWellPortlets.FooterPortletManager4"
+    type="Products.ContentWellPortlets.browser.interfaces.IFooterPortlets"/>
+ <portletmanager name="ContentWellPortlets.FooterPortletManager5"
+    type="Products.ContentWellPortlets.browser.interfaces.IFooterPortlets"/>
+ <portletmanager name="ContentWellPortlets.FooterPortletManager6"
+    type="Products.ContentWellPortlets.browser.interfaces.IFooterPortlets"/>
+ <portletmanager name="ContentWellPortlets.InHeaderPortletManager1"
+    type="Products.ContentWellPortlets.browser.interfaces.IHeaderPortlets"/>
+ <portletmanager name="ContentWellPortlets.InHeaderPortletManager2"
+    type="Products.ContentWellPortlets.browser.interfaces.IHeaderPortlets"/>
+ <portletmanager name="ContentWellPortlets.InHeaderPortletManager3"
+    type="Products.ContentWellPortlets.browser.interfaces.IHeaderPortlets"/>
+ <portletmanager name="ContentWellPortlets.InHeaderPortletManager4"
+    type="Products.ContentWellPortlets.browser.interfaces.IHeaderPortlets"/>
+ <portletmanager name="ContentWellPortlets.InHeaderPortletManager5"
+    type="Products.ContentWellPortlets.browser.interfaces.IHeaderPortlets"/>
+ <portletmanager name="ContentWellPortlets.InHeaderPortletManager6"
+    type="Products.ContentWellPortlets.browser.interfaces.IHeaderPortlets"/>
+ <portletmanager name="plone.dashboard1"
+    type="plone.app.portlets.interfaces.IDashboard"/>
+ <portletmanager name="plone.dashboard2"
+    type="plone.app.portlets.interfaces.IDashboard"/>
+ <portletmanager name="plone.dashboard3"
+    type="plone.app.portlets.interfaces.IDashboard"/>
+ <portletmanager name="plone.dashboard4"
+    type="plone.app.portlets.interfaces.IDashboard"/>
+ <portletmanager name="plone.leftcolumn"
+    type="plone.app.portlets.interfaces.ILeftColumn"/>
+ <portletmanager name="plone.rightcolumn"
+    type="plone.app.portlets.interfaces.IRightColumn"/>
+ <portlet title="Login" addview="portlets.Login"
+    description="A portlet which can render a log-in box">
+  <for interface="plone.app.portlets.interfaces.IColumn"/>
+ </portlet>
+ <portlet title="Collection portlet"
+    addview="plone.portlet.collection.Collection"
+    description="A portlet which displays the results of a collection query"/>
+ <portlet title="Lead Image Behavior Portlet"
+    addview="collective.miscbehaviors.imageportlet"
+    description="This portlet displays lead image of content"/>
+ <portlet title="Review list" addview="portlets.Review"
+    description="A portlet which can render a listing on the review queue.">
+  <for interface="plone.app.portlets.interfaces.IColumn"/>
+  <for interface="plone.app.portlets.interfaces.IDashboard"/>
+ </portlet>
+ <portlet title="RSS Feed" addview="portlets.rss"
+    description="A portlet which can receive and render an RSS feed.">
+  <for interface="plone.app.portlets.interfaces.IColumn"/>
+  <for interface="plone.app.portlets.interfaces.IDashboard"/>
+ </portlet>
+ <portlet title="Classic portlet" addview="portlets.Classic"
+    description="A portlet which can render a classic template-based portlet">
+  <for interface="plone.app.portlets.interfaces.IColumn"/>
+  <for interface="plone.app.portlets.interfaces.IDashboard"/>
+ </portlet>
+ <portlet title="Calendar portlet" addview="portlets.Calendar"
+    description="A portlet which can render a calendar.">
+  <for interface="plone.app.portlets.interfaces.IColumn"/>
+  <for interface="plone.app.portlets.interfaces.IDashboard"/>
+ </portlet>
+ <portlet title="Search" addview="portlets.Search"
+    description="A portlet which shows a search box.">
+  <for interface="plone.app.portlets.interfaces.IColumn"/>
+  <for interface="plone.app.portlets.interfaces.IDashboard"/>
+ </portlet>
+ <portlet title="Carousel portlet"
+    addview="diazotheme.bootstrap.portlet.carousel"
+    description="A portlet that show images using Bootstrap's carousel"/>
+ <portlet title="PayPal Behavior Portlet"
+    addview="collective.miscbehaviors.paypalportlet"
+    description="This portlet displays paypal button for content with paypalbehavior"/>
+ <portlet title="Recent items" addview="portlets.Recent"
+    description="A portlet which can render a listing of recently changed items.">
+  <for interface="plone.app.portlets.interfaces.IColumn"/>
+  <for interface="plone.app.portlets.interfaces.IDashboard"/>
+ </portlet>
+ <portlet title="News" addview="portlets.News"
+    description="A portlet which can render a listing of recent news">
+  <for interface="plone.app.portlets.interfaces.IColumn"/>
+  <for interface="plone.app.portlets.interfaces.IDashboard"/>
+ </portlet>
+ <portlet title="Static text portlet" addview="plone.portlet.static.Static"
+    description="A portlet which can display static HTML text."/>
+ <portlet title="Navigation" addview="portlets.Navigation"
+    description="A portlet which can render a navigation tree">
+  <for interface="plone.app.portlets.interfaces.IColumn"/>
+ </portlet>
+ <portlet title="Events" addview="portlets.Events"
+    description="A portlet which can render a listing of recent events">
+  <for interface="plone.app.portlets.interfaces.IColumn"/>
+  <for interface="plone.app.portlets.interfaces.IDashboard"/>
+ </portlet>
+ <assignment name="help" category="context" key="/"
+    manager="ContentWellPortlets.FooterPortletManager4"
+    type="plone.portlet.static.Static" visible="True">
+  <property name="text">&lt;ul class="help"&gt;
+                   &lt;li&gt;我们的生活以活动开始，以活动结束，活动是人们的生活中心。我们相信，任何人都可以是活动组织者，这就是为什么我们会创建OWASP会务系统。OWASP会务系统为活动组织者提供了所有的工具，无论它是一个会议、会展、研讨班、补习班、演唱会还是公司产品发布会，OWASP会务系统为活动参与者建立新一代社交、商务平台，让活动活起来！&lt;/li&gt;	
+                   &lt;/li&gt;
+               &lt;/ul&gt;</property>
+  <property name="more_url"/>
+  <property name="omit_border">False</property>
+  <property name="header">欢迎您来到OWASP</property>
+  <property name="footer"/>
+ </assignment>
+ <assignment name="micblogs" category="context" key="/"
+    manager="ContentWellPortlets.FooterPortletManager3"
+    type="plone.portlet.static.Static" visible="True">
+  <property name="text">&lt;ul&gt;
+   
+                   &lt;li&gt;&lt;a target="_blank" href="http://weibo.com/owaspchina"&gt;新浪微博&lt;/a&gt;&lt;/li&gt;				
+                   &lt;li&gt;&lt;a target="_blank" href="http://t.qq.com/OWASP_China"&gt;腾讯微博&lt;/a&gt;&lt;/li&gt;				
+               &lt;/ul&gt;</property>
+  <property name="more_url"/>
+  <property name="omit_border">False</property>
+  <property name="header">关注OWASP</property>
+  <property name="footer"/>
+ </assignment>
+ <assignment name="shortcut" category="context" key="/"
+    manager="ContentWellPortlets.FooterPortletManager2"
+    type="plone.portlet.static.Static" visible="True">
+  <property name="text">&lt;ul&gt;
+                   &lt;li&gt;&lt;a href="/login"&gt;登录&lt;/a&gt;&lt;/li&gt;					
+                    &lt;li&gt;&lt;a href="/memberfolder/register"&gt;注册免费账号&lt;/a&gt;&lt;/li&gt;	
+                   &lt;li&gt;&lt;a href="/conferencefolder/++add++collective.conference.conference"&gt;创建活动&lt;/a&gt;&lt;/li&gt;	
+                   &lt;li&gt;&lt;a href="/@@conferences_joined"&gt;我的活动&lt;/a&gt;&lt;/li&gt;	
+               &lt;/ul&gt;</property>
+  <property name="more_url"/>
+  <property name="omit_border">False</property>
+  <property name="header">快速操作</property>
+  <property name="footer"/>
+ </assignment>
+ <assignment name="about" category="context" key="/"
+    manager="ContentWellPortlets.FooterPortletManager1"
+    type="plone.portlet.static.Static" visible="True">
+  <property name="text">&lt;ul&gt;
+                   &lt;li&gt;&lt;a href="/about_us"&gt;关于OWASP &lt;/a&gt; 		&lt;!-- 关于OWASP --&gt;
+                   &lt;/li&gt;
+                   &lt;li id="company_history"&gt;&lt;a href="/company_history"&gt;OWASP历程&lt;/a&gt;&lt;/li&gt;					
+                   &lt;li id="jobs"&gt;&lt;a href="/jobs"&gt;加入OWASP &lt;/a&gt;&lt;/li&gt;		&lt;!-- 加入OWASP --&gt;
+                   &lt;li&gt;&lt;a href="/privacy"&gt;隐私声明&lt;/a&gt;			&lt;!-- 隐私声明 --&gt;
+                   &lt;/li&gt;
+                   &lt;li&gt;&lt;a href="/contact_us"&gt;联系OWASP &lt;/a&gt;	&lt;!-- 联系OWASP --&gt;
+                   &lt;/li&gt;
+               &lt;/ul&gt;</property>
+  <property name="more_url"/>
+  <property name="omit_border">False</property>
+  <property name="header">了解OWASP</property>
+  <property name="footer"/>
+ </assignment>
+ <assignment name="navigation" category="context" key="/"
+    manager="plone.leftcolumn" type="portlets.Navigation" visible="True">
+  <property name="topLevel">1</property>
+  <property name="currentFolderOnly">False</property>
+  <property name="name"></property>
+  <property name="includeTop">False</property>
+  <property name="bottomLevel">0</property>
+  <property name="root"/>
+ </assignment>
+ <assignment name="news" category="context" key="/"
+    manager="plone.rightcolumn" type="portlets.News" visible="True">
+  <property name="count">5</property>
+  <property name="state">
+   <element>published</element>
+  </property>
+ </assignment>
+ <assignment name="events" category="context" key="/"
+    manager="plone.rightcolumn" type="portlets.Events" visible="True">
+  <property name="count">5</property>
+  <property name="state">
+   <element>published</element>
+  </property>
+ </assignment>
+ <blacklist category="user" location="/" manager="plone.dashboard2"
+    status="acquire"/>
+ <blacklist category="group" location="/" manager="plone.dashboard2"
+    status="acquire"/>
+ <blacklist category="content_type" location="/" manager="plone.dashboard2"
+    status="acquire"/>
+ <blacklist category="context" location="/" manager="plone.dashboard2"
+    status="acquire"/>
+ <blacklist category="user" location="/" manager="plone.dashboard3"
+    status="acquire"/>
+ <blacklist category="group" location="/" manager="plone.dashboard3"
+    status="acquire"/>
+ <blacklist category="content_type" location="/" manager="plone.dashboard3"
+    status="acquire"/>
+ <blacklist category="context" location="/" manager="plone.dashboard3"
+    status="acquire"/>
+ <blacklist category="user" location="/"
+    manager="ContentWellPortlets.AbovePortletManager2" status="acquire"/>
+ <blacklist category="group" location="/"
+    manager="ContentWellPortlets.AbovePortletManager2" status="acquire"/>
+ <blacklist category="content_type" location="/"
+    manager="ContentWellPortlets.AbovePortletManager2" status="acquire"/>
+ <blacklist category="context" location="/"
+    manager="ContentWellPortlets.AbovePortletManager2" status="acquire"/>
+ <blacklist category="user" location="/" manager="plone.dashboard1"
+    status="acquire"/>
+ <blacklist category="group" location="/" manager="plone.dashboard1"
+    status="acquire"/>
+ <blacklist category="content_type" location="/" manager="plone.dashboard1"
+    status="acquire"/>
+ <blacklist category="context" location="/" manager="plone.dashboard1"
+    status="acquire"/>
+ <blacklist category="user" location="/"
+    manager="ContentWellPortlets.AbovePortletManager4" status="acquire"/>
+ <blacklist category="group" location="/"
+    manager="ContentWellPortlets.AbovePortletManager4" status="acquire"/>
+ <blacklist category="content_type" location="/"
+    manager="ContentWellPortlets.AbovePortletManager4" status="acquire"/>
+ <blacklist category="context" location="/"
+    manager="ContentWellPortlets.AbovePortletManager4" status="acquire"/>
+ <blacklist category="user" location="/"
+    manager="ContentWellPortlets.AbovePortletManager5" status="acquire"/>
+ <blacklist category="group" location="/"
+    manager="ContentWellPortlets.AbovePortletManager5" status="acquire"/>
+ <blacklist category="content_type" location="/"
+    manager="ContentWellPortlets.AbovePortletManager5" status="acquire"/>
+ <blacklist category="context" location="/"
+    manager="ContentWellPortlets.AbovePortletManager5" status="acquire"/>
+ <blacklist category="user" location="/" manager="plone.dashboard4"
+    status="acquire"/>
+ <blacklist category="group" location="/" manager="plone.dashboard4"
+    status="acquire"/>
+ <blacklist category="content_type" location="/" manager="plone.dashboard4"
+    status="acquire"/>
+ <blacklist category="context" location="/" manager="plone.dashboard4"
+    status="acquire"/>
+ <blacklist category="user" location="/"
+    manager="ContentWellPortlets.AbovePortletManager1" status="acquire"/>
+ <blacklist category="group" location="/"
+    manager="ContentWellPortlets.AbovePortletManager1" status="acquire"/>
+ <blacklist category="content_type" location="/"
+    manager="ContentWellPortlets.AbovePortletManager1" status="acquire"/>
+ <blacklist category="context" location="/"
+    manager="ContentWellPortlets.AbovePortletManager1" status="acquire"/>
+ <blacklist category="user" location="/"
+    manager="ContentWellPortlets.BelowPortletManager6" status="acquire"/>
+ <blacklist category="group" location="/"
+    manager="ContentWellPortlets.BelowPortletManager6" status="acquire"/>
+ <blacklist category="content_type" location="/"
+    manager="ContentWellPortlets.BelowPortletManager6" status="acquire"/>
+ <blacklist category="context" location="/"
+    manager="ContentWellPortlets.BelowPortletManager6" status="acquire"/>
+ <blacklist category="user" location="/"
+    manager="ContentWellPortlets.AbovePortletManager3" status="acquire"/>
+ <blacklist category="group" location="/"
+    manager="ContentWellPortlets.AbovePortletManager3" status="acquire"/>
+ <blacklist category="content_type" location="/"
+    manager="ContentWellPortlets.AbovePortletManager3" status="acquire"/>
+ <blacklist category="context" location="/"
+    manager="ContentWellPortlets.AbovePortletManager3" status="acquire"/>
+ <blacklist category="user" location="/"
+    manager="ContentWellPortlets.InHeaderPortletManager1" status="acquire"/>
+ <blacklist category="group" location="/"
+    manager="ContentWellPortlets.InHeaderPortletManager1" status="acquire"/>
+ <blacklist category="content_type" location="/"
+    manager="ContentWellPortlets.InHeaderPortletManager1" status="acquire"/>
+ <blacklist category="context" location="/"
+    manager="ContentWellPortlets.InHeaderPortletManager1" status="acquire"/>
+ <blacklist category="user" location="/"
+    manager="ContentWellPortlets.BelowPortletManager1" status="acquire"/>
+ <blacklist category="group" location="/"
+    manager="ContentWellPortlets.BelowPortletManager1" status="acquire"/>
+ <blacklist category="content_type" location="/"
+    manager="ContentWellPortlets.BelowPortletManager1" status="acquire"/>
+ <blacklist category="context" location="/"
+    manager="ContentWellPortlets.BelowPortletManager1" status="acquire"/>
+ <blacklist category="user" location="/"
+    manager="ContentWellPortlets.BelowPortletManager4" status="acquire"/>
+ <blacklist category="group" location="/"
+    manager="ContentWellPortlets.BelowPortletManager4" status="acquire"/>
+ <blacklist category="content_type" location="/"
+    manager="ContentWellPortlets.BelowPortletManager4" status="acquire"/>
+ <blacklist category="context" location="/"
+    manager="ContentWellPortlets.BelowPortletManager4" status="acquire"/>
+ <blacklist category="user" location="/"
+    manager="ContentWellPortlets.BelowPortletManager5" status="acquire"/>
+ <blacklist category="group" location="/"
+    manager="ContentWellPortlets.BelowPortletManager5" status="acquire"/>
+ <blacklist category="content_type" location="/"
+    manager="ContentWellPortlets.BelowPortletManager5" status="acquire"/>
+ <blacklist category="context" location="/"
+    manager="ContentWellPortlets.BelowPortletManager5" status="acquire"/>
+ <blacklist category="user" location="/"
+    manager="ContentWellPortlets.FooterPortletManager5" status="acquire"/>
+ <blacklist category="group" location="/"
+    manager="ContentWellPortlets.FooterPortletManager5" status="acquire"/>
+ <blacklist category="content_type" location="/"
+    manager="ContentWellPortlets.FooterPortletManager5" status="acquire"/>
+ <blacklist category="context" location="/"
+    manager="ContentWellPortlets.FooterPortletManager5" status="acquire"/>
+ <blacklist category="user" location="/"
+    manager="ContentWellPortlets.FooterPortletManager4" status="acquire"/>
+ <blacklist category="group" location="/"
+    manager="ContentWellPortlets.FooterPortletManager4" status="acquire"/>
+ <blacklist category="content_type" location="/"
+    manager="ContentWellPortlets.FooterPortletManager4" status="acquire"/>
+ <blacklist category="context" location="/"
+    manager="ContentWellPortlets.FooterPortletManager4" status="acquire"/>
+ <blacklist category="user" location="/"
+    manager="ContentWellPortlets.FooterPortletManager3" status="acquire"/>
+ <blacklist category="group" location="/"
+    manager="ContentWellPortlets.FooterPortletManager3" status="acquire"/>
+ <blacklist category="content_type" location="/"
+    manager="ContentWellPortlets.FooterPortletManager3" status="acquire"/>
+ <blacklist category="context" location="/"
+    manager="ContentWellPortlets.FooterPortletManager3" status="acquire"/>
+ <blacklist category="user" location="/"
+    manager="ContentWellPortlets.FooterPortletManager2" status="acquire"/>
+ <blacklist category="group" location="/"
+    manager="ContentWellPortlets.FooterPortletManager2" status="acquire"/>
+ <blacklist category="content_type" location="/"
+    manager="ContentWellPortlets.FooterPortletManager2" status="acquire"/>
+ <blacklist category="context" location="/"
+    manager="ContentWellPortlets.FooterPortletManager2" status="acquire"/>
+ <blacklist category="user" location="/"
+    manager="ContentWellPortlets.FooterPortletManager1" status="acquire"/>
+ <blacklist category="group" location="/"
+    manager="ContentWellPortlets.FooterPortletManager1" status="acquire"/>
+ <blacklist category="content_type" location="/"
+    manager="ContentWellPortlets.FooterPortletManager1" status="acquire"/>
+ <blacklist category="context" location="/"
+    manager="ContentWellPortlets.FooterPortletManager1" status="acquire"/>
+ <blacklist category="user" location="/"
+    manager="ContentWellPortlets.BelowPortletManager3" status="acquire"/>
+ <blacklist category="group" location="/"
+    manager="ContentWellPortlets.BelowPortletManager3" status="acquire"/>
+ <blacklist category="content_type" location="/"
+    manager="ContentWellPortlets.BelowPortletManager3" status="acquire"/>
+ <blacklist category="context" location="/"
+    manager="ContentWellPortlets.BelowPortletManager3" status="acquire"/>
+ <blacklist category="user" location="/" manager="plone.leftcolumn"
+    status="acquire"/>
+ <blacklist category="group" location="/" manager="plone.leftcolumn"
+    status="acquire"/>
+ <blacklist category="content_type" location="/" manager="plone.leftcolumn"
+    status="acquire"/>
+ <blacklist category="context" location="/" manager="plone.leftcolumn"
+    status="acquire"/>
+ <blacklist category="user" location="/"
+    manager="ContentWellPortlets.BelowPortletManager2" status="acquire"/>
+ <blacklist category="group" location="/"
+    manager="ContentWellPortlets.BelowPortletManager2" status="acquire"/>
+ <blacklist category="content_type" location="/"
+    manager="ContentWellPortlets.BelowPortletManager2" status="acquire"/>
+ <blacklist category="context" location="/"
+    manager="ContentWellPortlets.BelowPortletManager2" status="acquire"/>
+ <blacklist category="user" location="/"
+    manager="ContentWellPortlets.AbovePortletManager6" status="acquire"/>
+ <blacklist category="group" location="/"
+    manager="ContentWellPortlets.AbovePortletManager6" status="acquire"/>
+ <blacklist category="content_type" location="/"
+    manager="ContentWellPortlets.AbovePortletManager6" status="acquire"/>
+ <blacklist category="context" location="/"
+    manager="ContentWellPortlets.AbovePortletManager6" status="acquire"/>
+ <blacklist category="user" location="/"
+    manager="ContentWellPortlets.FooterPortletManager6" status="acquire"/>
+ <blacklist category="group" location="/"
+    manager="ContentWellPortlets.FooterPortletManager6" status="acquire"/>
+ <blacklist category="content_type" location="/"
+    manager="ContentWellPortlets.FooterPortletManager6" status="acquire"/>
+ <blacklist category="context" location="/"
+    manager="ContentWellPortlets.FooterPortletManager6" status="acquire"/>
+ <blacklist category="user" location="/"
+    manager="ContentWellPortlets.InHeaderPortletManager2" status="acquire"/>
+ <blacklist category="group" location="/"
+    manager="ContentWellPortlets.InHeaderPortletManager2" status="acquire"/>
+ <blacklist category="content_type" location="/"
+    manager="ContentWellPortlets.InHeaderPortletManager2" status="acquire"/>
+ <blacklist category="context" location="/"
+    manager="ContentWellPortlets.InHeaderPortletManager2" status="acquire"/>
+ <blacklist category="user" location="/"
+    manager="ContentWellPortlets.InHeaderPortletManager3" status="acquire"/>
+ <blacklist category="group" location="/"
+    manager="ContentWellPortlets.InHeaderPortletManager3" status="acquire"/>
+ <blacklist category="content_type" location="/"
+    manager="ContentWellPortlets.InHeaderPortletManager3" status="acquire"/>
+ <blacklist category="context" location="/"
+    manager="ContentWellPortlets.InHeaderPortletManager3" status="acquire"/>
+ <blacklist category="user" location="/"
+    manager="ContentWellPortlets.InHeaderPortletManager4" status="acquire"/>
+ <blacklist category="group" location="/"
+    manager="ContentWellPortlets.InHeaderPortletManager4" status="acquire"/>
+ <blacklist category="content_type" location="/"
+    manager="ContentWellPortlets.InHeaderPortletManager4" status="acquire"/>
+ <blacklist category="context" location="/"
+    manager="ContentWellPortlets.InHeaderPortletManager4" status="acquire"/>
+ <blacklist category="user" location="/"
+    manager="ContentWellPortlets.InHeaderPortletManager5" status="acquire"/>
+ <blacklist category="group" location="/"
+    manager="ContentWellPortlets.InHeaderPortletManager5" status="acquire"/>
+ <blacklist category="content_type" location="/"
+    manager="ContentWellPortlets.InHeaderPortletManager5" status="acquire"/>
+ <blacklist category="context" location="/"
+    manager="ContentWellPortlets.InHeaderPortletManager5" status="acquire"/>
+ <blacklist category="user" location="/"
+    manager="ContentWellPortlets.InHeaderPortletManager6" status="acquire"/>
+ <blacklist category="group" location="/"
+    manager="ContentWellPortlets.InHeaderPortletManager6" status="acquire"/>
+ <blacklist category="content_type" location="/"
+    manager="ContentWellPortlets.InHeaderPortletManager6" status="acquire"/>
+ <blacklist category="context" location="/"
+    manager="ContentWellPortlets.InHeaderPortletManager6" status="acquire"/>
+ <blacklist category="user" location="/" manager="plone.rightcolumn"
+    status="acquire"/>
+ <blacklist category="group" location="/" manager="plone.rightcolumn"
+    status="acquire"/>
+ <blacklist category="content_type" location="/" manager="plone.rightcolumn"
+    status="acquire"/>
+ <blacklist category="context" location="/" manager="plone.rightcolumn"
+    status="acquire"/>
+</portlets>
