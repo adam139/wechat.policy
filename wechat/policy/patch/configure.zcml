@@ -1,0 +1,48 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:monkey="http://namespaces.plone.org/monkey"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="wechat.policy">
+
+  <include package="collective.monkeypatcher" />
+
+
+    <monkey:patch
+     description="patch when create Member area function fire a createMemberArea event"
+     class ="Products.PlonePAS.tools.membership.MembershipTool"
+     original="loginUser"
+     replacement=".membership.loginUser"
+  /> 
+    <monkey:patch
+     description="patch when create Member area function fire a createMemberArea event"
+     class ="Products.PlonePAS.tools.membership.MembershipTool"
+     original="getMemberareaCreationFlag"
+     replacement=".membership.getMemberareaCreationFlag"
+  />  
+ 
+      <monkey:patch
+     description="patch plone session"
+     class ="plone.session.tktauth"
+     original="createTicket"
+     replacement=".tktauth.createTicket"
+  /> 
+  
+     <!--
+  	  <monkey:patch
+	  description="new get id"
+	  class ="plone.app.content.namechooser.NormalizingNameChooser"
+      original="chooseName"
+      replacement=".patch.namechooser.chooseName"
+  />
+
+
+   <monkey:patch
+     description="patch plone.session support remember me"
+     class ="plone.session.plugins.session.SessionPlugin"
+     original="extractCredentials"
+     replacement=".session.extractCredentials"
+  /> 
+ -->  
+
+</configure>

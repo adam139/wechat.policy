@@ -29,8 +29,8 @@ class TestSetup(unittest.TestCase):
         portal = self.layer['portal']
         portal_types = getToolByName(portal, 'portal_types')
         
-        self.assertTrue('collective.conference.conference' in portal_types)
-        self.assertTrue('collective.conference.session' in portal_types)        
+        self.assertTrue('my315ok.wechat.content.menufolder' in portal_types)
+        self.assertTrue('my315ok.wechat.content.menu' in portal_types)        
     
   
     def test_add_portal_member_permission(self):

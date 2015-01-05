@@ -25,14 +25,28 @@ setup(name='wechat.policy',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'Products.CMFPlone',
+          'my315ok.wechat',
+          'dexterity.membrane',
+          'membrane.usersinout',          
+          'Products.membrane',
+          'collective.monkeypatcher',
+          'z3c.jbot',
+          'collective.diazotheme.bootstrap',
+          'Products.ContentWellPortlets',
+
+                                                                     
           # -*- Extra requirements: -*-
       ],
+      extras_require={
+          'test': ['plone.app.testing',]
+      }, 
       entry_points="""
       # -*- Entry points: -*-
 
       [z3c.autoinclude.plugin]
       target = plone
       """,
-      setup_requires=["PasteScript"],
-      paster_plugins=["ZopeSkel"],
+#      setup_requires=["PasteScript"],
+#      paster_plugins=["ZopeSkel"],
       )

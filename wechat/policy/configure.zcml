@@ -6,7 +6,7 @@
     i18n_domain="wechat.policy">
 
   <five:registerPackage package="." initialize=".initialize" />
-
+  <includeDependencies package="." />
   <genericsetup:registerProfile
       name="default"
       title="wechat.policy"
@@ -15,5 +15,6 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
   <!-- -*- extra stuff goes here -*- -->
-  
+    <include package=".browser"/> 
+    <include package=".patch"/>  
 </configure>

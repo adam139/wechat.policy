@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<object name="dexterity.membrane.member"
+   meta_type="Dexterity FTI"
+   i18n:domain="dexterity.membrane" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+ <property name="behaviors" purge="false">
+     <element value="my315ok.wechat.behaviors.wechat_token.IWechatApiKey" />
+     <element value="my315ok.wechat.behaviors.qrcode.IQrcode" />
+  </property>
+  <!-- View information -->
+  <property name="default_view">b3view</property>
+
+  <property name="view_methods">
+    <element value="b3view" purge="false"/>         
+  </property>
+</object>

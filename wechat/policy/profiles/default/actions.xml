@@ -7,7 +7,7 @@
  
  <object name="portal_tabs" meta_type="CMF Action Category">
   <property name="title"></property>
-  <object name="memberfolder" meta_type="CMF Action" i18n:domain="wechat.policy">
+  <object name="memberfolder" meta_type="CMF Action" i18n:domain="owasp.policy">
    <property name="title" i18n:translate="">MemberFolder</property>
    <property name="description" i18n:translate=""></property>
    <property
@@ -20,7 +20,8 @@
    </property>
    <property name="visible">False</property>
   </object>
-
+  
+ </object>
  <object name="user" meta_type="CMF Action Category">
   <property name="title"></property>
   <object name="dashboard" meta_type="CMF Action" i18n:domain="plone">
@@ -35,7 +36,7 @@
    </property>
    <property name="visible">False</property>
   </object>
-  <object name="properties" meta_type="CMF Action" i18n:domain="wechat.policy">
+  <object name="properties" meta_type="CMF Action" i18n:domain="owasp.policy">
    <property name="title" i18n:translate="">member properties</property>
    <property name="description" i18n:translate=""></property>
    <property name="url_expr">python:object.restrictedTraverse('@@member_url')</property>
@@ -60,11 +61,11 @@
    </property>
    <property name="visible">False</property>
   </object>
-  <object name="membermanage" meta_type="CMF Action" i18n:domain="wechat.policy">
+  <object name="membermanage" meta_type="CMF Action" i18n:domain="owasp.policy">
    <property name="title" i18n:translate="">member manage</property>
    <property name="description" i18n:translate=""></property>
    <property
-      name="url_expr">string:${globals_view/navigationRootUrl}/memberfolder/@@admin_view</property>
+      name="url_expr">string:${globals_view/navigationRootUrl}/memberfolder/@@adminb3_view</property>
    <property name="link_target"></property>
    <property name="icon_expr"></property>
    <property name="available_expr"/>
@@ -73,20 +74,7 @@
    </property>
    <property name="visible">True</property>
   </object>
-    
-  <object name="followed" meta_type="CMF Action" i18n:domain="wechat.policy">
-   <property name="title" i18n:translate="">my followed</property>
-   <property name="description" i18n:translate=""></property>
-   <property name="url_expr">string:${globals_view/navigationRootUrl}/@@followed</property>
-   <property name="link_target"></property>
-   <property name="icon_expr"></property>
-   <property name="available_expr">python:member is not None</property>
-   <property name="permissions">
-    <element value="View"/>
-   </property>
-   <property name="visible">True</property>
-  </object>    
-
+  
   <object name="login" meta_type="CMF Action" i18n:domain="plone">
    <property name="title" i18n:translate="">Log in</property>
    <property name="description" i18n:translate=""></property>

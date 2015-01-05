@@ -34,5 +34,5 @@ class Policy(PloneSandboxLayer):
     def setUpPloneSite(self, portal):
         applyProfile(portal, 'wechat.policy:default')
 
-POLICY_FIXTURE = Policy()
-POLICY_INTEGRATION_TESTING = IntegrationTesting(bases=(POLICY_FIXTURE,), name="Policy:Integration")
+FIXTURE = Policy()
+INTEGRATION_TESTING = IntegrationTesting(bases=(FIXTURE,), name="Policy:Integration")
