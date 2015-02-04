@@ -19,3 +19,4 @@ wechat/policy/browser/interfaces.py
 wechat/policy/browser/tinymce.py
 wechat/policy/patch/__init__.py
 wechat/policy/patch/membership.py
+wechat/policy/patch/tktauth.py
