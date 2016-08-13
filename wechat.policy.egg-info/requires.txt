@@ -6,8 +6,6 @@ membrane.usersinout
 Products.membrane
 collective.monkeypatcher
 z3c.jbot
-collective.diazotheme.bootstrap
-Products.ContentWellPortlets
 
 [test]
 plone.app.testing

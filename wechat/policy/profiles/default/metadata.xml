@@ -1,10 +1,8 @@
 <metadata>
     <version>100</version>
-    <dependencies> 
+    <dependencies>
         <dependency>profile-dexterity.membrane:default</dependency>
-        <dependency>profile-my315ok.wechat:default</dependency>        
-        
-        <dependency>profile-collective.diazotheme.bootstrap:default</dependency>
-        
+        <dependency>profile-my315ok.products:default</dependency>        
+        <dependency>profile-my315ok.wechat:default</dependency>       
     </dependencies>
 </metadata>

@@ -32,8 +32,8 @@ setup(name='wechat.policy',
           'Products.membrane',
           'collective.monkeypatcher',
           'z3c.jbot',
-          'collective.diazotheme.bootstrap',
-          'Products.ContentWellPortlets',
+#           'collective.diazotheme.bootstrap',
+#           'Products.ContentWellPortlets',
 
                                                                      
           # -*- Extra requirements: -*-

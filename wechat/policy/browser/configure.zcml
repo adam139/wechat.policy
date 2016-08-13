@@ -12,14 +12,7 @@
         permission="zope2.View" 
         />  
   
-  <browser:page
-    for="*"
-    name="tinymce-jsonconfiguration"
-    class=".tinymce.TinyMCEBrowserView"
-    permission="zope2.View"
-    attribute="jsonConfiguration"
-    layer=".interfaces.IThemeSpecific"
-    />
+ 
     
    <z3c:widgetTemplate
         mode="input"
