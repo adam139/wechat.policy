@@ -5,6 +5,7 @@
 /.settings
 *.pyc
 *.egg
+*.egg-info
 *.pyo
 *.mo
 .project
