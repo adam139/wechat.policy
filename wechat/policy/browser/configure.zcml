@@ -11,19 +11,7 @@
         layer=".interfaces.IThemeSpecific"         
         permission="zope2.View" 
         />  
-  
- 
-    
-   <z3c:widgetTemplate
-        mode="input"
- 		widget="collective.z3cform.datetimewidget.interfaces.IDateWidget"        
- 		layer=".interfaces.IThemeSpecific"
- 		template="templates/date_input.pt" />
-   <z3c:widgetTemplate
-        mode="input"
- 		widget="collective.z3cform.datetimewidget.interfaces.IDatetimeWidget"        
- 		layer=".interfaces.IThemeSpecific"
- 		template="templates/datetime_input.pt" /> 		
+		
 <!-- 		
 <include package="z3c.jbot" file="meta.zcml" />
 
